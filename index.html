@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,44 +8,125 @@
     <meta name="description" content="YLabs - ZakkanAtivana">
     <meta name="author" content="ZakkanAtivana">
     <title> YLabs - ZakkanAtivana </title>
+    <link rel="stylesheet" href="libraries/css/style.css">
+    <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.css">
 </head>
+
 <body>
-    <nav>
-        <ul>
-            <li> <a href="#profile"> Profile </a> </li>
-            <li> <a href="#about-me"> About Me </a> </li>
-            <li> <a href="#work-experience"> Work Experience </a> </li>
-            <li> <a href="#education"> Education </a> </li>
-            <li> <a href="#skills"> Skills </a> </li>
-            <li> <a href="#contact-me"> Contact - me </a> </li>
-        </ul>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-lg">
+            <a class="navbar-brand" href="#"> ZakkanAtivana </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#profile"> Profile <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#about-me"> About Me </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#work-experience"> Work Experience </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#education"> Education </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#skills"> Skills </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#contact-me"> Contact Me </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
+    <!-- End Navbar -->
 
+    <!-- Profile -->
     <section id="profile">
-        <img src="img/zakkan.jpeg" alt="" width="90">
-        <h1> Zakkan Ativana </h1>
-        <h4> Jl.Sukun 62  </h4>
-        <h4> ahmad.1345@students.amikom.ac.id </h4>
-        <h4> 087887586851 </h4>
+        <div class="container-lg">
+            <div class="row justify-content-between">
+                <div class="col-md-6 align-self-center">
+                    <div class="profile-desc">
+                        <h1 style="font-weight: 700;" class="mb-3"> Hi, Saya Zakkan </h1>
+                        <h4 class="mb-3"> Web Designer </h4>
+                        <p> Saya memiliki rasa penasaran dan semangat yang tinggi di bidang informasi dan teknologi
+                            khususnya
+                            pemograman web. selama berkuliah saya tidak hanya belajar dalam kelas tetapi juga belajar
+                            secara mandiri
+                            diluar kelas dengan mengikuti modul yang ada di internet dan berhasil membuat proyek
+                            sederhana.
+                            disamping itu kemampuan komunikasi yang saya miliki juga membuat saya cepat beradaptasi
+                            dengan
+                            lingkungan baru.</p>
+                        <a href="https://www.linkedin.com/in/zakkanativana/" class="btn btn-merah"> Linkedin </a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="profile-img">
+                        <img src="img/Foto1.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Profile -->
 
-        <ul>
-            <li><a href="https://www.linkedin.com/in/zakkanativana/"> Linkedin </a></li>
-            <li><a href="https://www.instagram.com/zakkanativana"> Instagram </a></li>
-        </ul>
-        <hr>
+    <section id="skills" class="mb-5 mt-3">
+        <div class="container info-skills">
+            <div class="row mb-5">
+                <div class="col text-center">
+                    <h2 style="font-family: 'Poppins', sans-serif; font-weight: 600;"> My Skills</h2>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md mb-3">
+                    <div class="card p-2" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; border-radius: 1rem;">
+                        <img src="img/html.png" class="card-img-top" alt="HTML" style="width: 50%; margin: 15px auto;">
+                        <div class="card-body">
+                            <h2 style="font-weight: 700;" class="mb-3"> HTML </h2>
+                            <h5 style="color: #FF403F;"> Newbie </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md mb-3">
+                    <div class="card p-2" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; border-radius: 1rem;">
+                        <img src="img/css.png" class="card-img-top" alt="HTML" style="width: 50%; margin: 15px auto;">
+                        <div class="card-body">
+                            <h2 style="font-weight: 700;" class="mb-3"> CSS </h2>
+                            <h5 style="color: #FF403F;"> Newbie </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md mb-3">
+                    <div class="card"
+                        style=" padding:35px; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; border-radius: 1rem;">
+                        <img src="img/php.svg" class="card-img-top" alt="HTML" style="width: 50%; margin: 15px auto;">
+                        <div class="card-body">
+                            <h2 style="font-weight: 700;" class="mb-3 mt-3"> PHP </h2>
+                            <h5 style="color: #FF403F;"> Newbie </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md mb-3">
+                    <div class="card p-2" style=" box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; border-radius: 1rem;">
+                        <img src="img/js.png" class="card-img-top" alt="HTML" style="width: 50%; margin: 15px auto;">
+                        <div class="card-body">
+                            <h2 style="font-weight: 700;" class="mb-3"> Javascript </h2>
+                            <h5 style="color: #FF403F;"> Newbie </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="about-me">
-        <h1> About Me </h1>
-        <br>
-        <p> Saya memiliki rasa penasaran dan semangat yang tinggi di bidang informasi dan teknologi khususnya
-            pemograman web. selama berkuliah saya tidak hanya belajar dalam kelas tetapi juga belajar secara mandiri
-            diluar kelas dengan mengikuti modul yang ada di internet dan berhasil membuat proyek sederhana.
-            disamping itu kemampuan komunikasi yang saya miliki juga membuat saya cepat beradaptasi dengan
-            lingkungan baru. </p>
-    </section>
-
-    <section id="work-experience">
+    <!-- <section id="work-experience">
         <h1> Work Experience </h1>
         <br>
         <table border="1">
@@ -69,59 +151,81 @@
                 <td> 2021 </td>
             </tr>
         </table>
-    </section>
-
-    <section id="education">
+    </section> -->
+    <!-- <section id="education">
         <h1> Pendidikan </h1>
         <br>
         <h4> Universitas AMIKOM Yogyakarta </h4>
         <hr>
         <h5> Sistem Informasi </h5>
         <h5> 2019 - 2023 </h5>
+    </section> -->
+
+    <section id="contact-me" class="contact" style="margin-top: 120px;">
+        <div class="container">
+            <div class="row pt-4 mb-4">
+                <div class="col text-center">
+                    <h1> Contact Me </h1>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-4">
+                    <div class="card text-white mb-3 text-center" style="background-color: #DE3B49;">
+                        <div class="card-body">
+                            <h5 class="card-title"> Contact Me </h5>
+                            <p class="card-text"> Ahmad Zakkan Ativana <br> ahmad.1345@students.amikom.ac.id </p>
+                        </div>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <h1> Location </h1>
+                        </li>
+                        <li class="list-group-item"> My Kos </li>
+                        <li class="list-group-item"> Jl.Sukun 62, Condong Catur, Depok, Sleman </li>
+                        <li class="list-group-item"> DIY, Indonesia </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="nama"> Nama </label>
+                            <input type="text" class="form-control" id="nama">
+                        </div>
+                        <div class="form-group">
+                            <label for="email"> email </label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="notelp"> No. Telepon </label>
+                            <input type="text" class="form-control" id="notelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="pesan"> Pesan </label>
+                           <textarea name="pesan" id="pesan" class="form-control"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-danger"> Kirim </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="skills">
-        <h1> Skills </h1>
-        <br>
-        <ol>
-            <li> HTML </li>
-            <li> CSS </li>
-            <li> Javascript </li>
-            <li> PHP </li>
-            <li> Figma </li>
-        </ol>
-    </section>
-
-    <section id="contact-me">
-        <h1> Contact Me </h1>
-        <br>
-        <form method="POST" action=""> 
-            <label>
-                Firstname : 
-                <input type="text" name="firstname" >
-            </label>    
-            <label>
-                Lastname : 
-                <input type="text" name="lastname" >
-            </label>
-            <label for="negara"> Pilih Negara : </label>
-                <select name="negara" id="negara">
-                    <option value="Indonesia"> Indonesia </option>
-                    <option value="Malaysia"> Malaysia </option>
-                    <option value="Singapore"> Singapore </option>
-                </select>
-           <label>
-               Tulis Pesan :
-               <textarea name="pesan" id="" cols="0" rows="0"></textarea>
-           </label>
-           <button type="submit"> Submit </button>
-            
-        </form> 
-    </section>
-
-    <footer>
-        <p> Ahmad Zakkan Ativana </p>
-        <p> ahmad.1345@students.amikom.ac.id </p>
+    <footer class="text-dark mt-5">
+        <div class="container">
+            <div class="row pt-3">
+                <div class="col text-center">
+                    <p> @zakkanativana </p>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <script src="libraries/jquery/jquery-3.4.1.min.js"></script>
+    <script src="libraries/bootstrap/js/bootstrap.min.js"></script>
 </body>
+
 </html>
