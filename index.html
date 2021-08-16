@@ -30,13 +30,7 @@
                         <a class="nav-link" href="#about-me"> About Me </a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="#work-experience"> Work Experience </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="#education"> Education </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="#skills"> Skills </a>
+                        <a class="nav-link" href="#" id="mySkills" onclick="scrollToHash('skills'); return false;"> Skills </a>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link" href="#contact-me"> Contact Me </a>
@@ -129,41 +123,6 @@
         </div>
     </section>
 
-    <!-- <section id="work-experience">
-        <h1> Work Experience </h1>
-        <br>
-        <table border="1">
-            <tr>
-                <td> Company </td>
-                <td> : </td>
-                <td> YLabs Indoneisa </td>
-            </tr>
-            <tr>
-                <td> Role </td>
-                <td> : </td>
-                <td> Software Engineer </td>
-            </tr>
-            <tr>
-                <td> Status </td>
-                <td> : </td>
-                <td> Aktif </td>
-            </tr>
-            <tr>
-                <td> Periode </td>
-                <td> : </td>
-                <td> 2021 </td>
-            </tr>
-        </table>
-    </section> -->
-    <!-- <section id="education">
-        <h1> Pendidikan </h1>
-        <br>
-        <h4> Universitas AMIKOM Yogyakarta </h4>
-        <hr>
-        <h5> Sistem Informasi </h5>
-        <h5> 2019 - 2023 </h5>
-    </section> -->
-
     <section id="contact-me" class="contact" style="margin-top: 120px;">
         <div class="container">
             <div class="row pt-4 mb-4">
@@ -191,25 +150,25 @@
                 </div>
 
                 <div class="col-lg-6">
-                    <form>
+                    <form id="myform" action="#" onsubmit="formValidation(); return false;" method="POST">
                         <div class="form-group">
                             <label for="nama"> Nama </label>
-                            <input type="text" class="form-control" id="nama">
+                            <input type="text" class="form-control" name="nama" id="nama">
                         </div>
                         <div class="form-group">
                             <label for="email"> email </label>
-                            <input type="email" class="form-control" id="email">
+                            <input type="email" class="form-control" name="email" id="email">
                         </div>
                         <div class="form-group">
                             <label for="notelp"> No. Telepon </label>
-                            <input type="text" class="form-control" id="notelp">
+                            <input type="number" class="form-control" name="notelp" id="notelp">
                         </div>
                         <div class="form-group">
                             <label for="pesan"> Pesan </label>
-                           <textarea name="pesan" id="pesan" class="form-control"></textarea>
+                            <textarea name="pesan" name="pesan" class="form-control" id="pesan"></textarea>
                         </div>
                         <div class="form-group">
-                            <button type="button" class="btn btn-danger"> Kirim </button>
+                            <button type="submit" class="btn btn-danger" onclick="formValidation(); return false;"> Kirim ! </button>
                         </div>
                     </form>
                 </div>
@@ -229,6 +188,73 @@
 
     <script src="libraries/jquery/jquery-3.4.1.min.js"></script>
     <script src="libraries/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        
+        // Form Validation
+        function formValidation(){
+            let nama = document.getElementById("nama").value;
+            let email = document.getElementById("email").value;
+            let notelpn = document.getElementById("notelp").value;
+            console.log(nama);
+            console.log(email);
+            console.log(notelp);
+        }
+
+        // DOM href
+        function scrollToHash(hashName) { 
+            window.location.href = "#" + hashName;
+            // location.href = "#" + hashName; 
+            // let elmnt = document.getElementById(hashName); 
+            // elmnt.scrollIntoView();
+            // console.log(elmnt);      
+            // let x = location.href;
+            // x;
+            // return false;
+        };
+
+        // Function Fibonacci For Loop
+        function fibonacci(n) {
+
+            let angkaPertama = 1;
+            let angkaKedua = 0;
+            let angka = angkaPertama + angkaKedua;
+
+            console.log(angka);
+
+            for (let i = 1; i < n; i++) {
+                angka = angkaPertama + angkaKedua;
+                angkaKedua = angkaPertama;
+                angkaPertama = angka;
+                console.log(angka);
+            }
+
+        }
+        console.time();
+        for (i = 0; i < 1; i++) {
+            console.log(fibonacci(5));
+        }
+        console.timeEnd();
+        // Function fibonacci Rekursif
+        function fib(n) {
+            if (n === 1) {
+                return 1;
+            } else if (n === 0) {
+                return 0;
+            } else {
+                return fib(n - 1) + fib(n - 2);
+            }
+        }
+
+        for (let i = 0; i < 5; i++) {
+            console.log(fib(i));
+        }
+
+        console.time();
+        for (i = 0; i < 5; i++) {
+            console.log(fib(i));
+        }
+        console.timeEnd();
+    </script>
 </body>
 
 </html>
